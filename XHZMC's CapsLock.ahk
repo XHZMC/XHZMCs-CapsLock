@@ -1,13 +1,4 @@
-﻿if not A_IsAdmin
-{
-   Run *RunAs "%A_ScriptFullPath%" 
-   ExitApp
-}
-; 以管理员身份运行。
-
-#NoEnv
-
-SetStoreCapslockMode, Off
+﻿SetStoreCapslockMode, Off
 
 CapsLock::
 if GetKeyState("CapsLock", "T")
